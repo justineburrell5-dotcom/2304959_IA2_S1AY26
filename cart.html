@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title>Cart — Dignified Epoxy</title>
+  <link rel="stylesheet" href="../Style/style.css" />
+</head>
+<body>
+  <header id="site-header">
+    <div class="container header-inner">
+	<div class="logo-top">
+    <img src="../Assets/DE logo.gif" alt="Store Logo">
+      <div class="brand">Dignified Epoxy</div>
+</div>
+      <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="about.html">About Us</a>
+<a id="login-link" href="login.html">Login</a>
+  
+  <span id="profile-status" style="margin-left: 10px; color: #6b6b6b; font-size: 14px;"></span>
+  <button id="logout-btn" class="btn" style="display: none; margin-left: 10px;">Logout</button>
+</nav>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Your Shopping Cart</h2>
+      <table class="cart-table" aria-describedby="cart-summary">
+        <thead><tr><th>Product</th><th>Price</th><th>Qty</th><th>Subtotal</th></tr></thead>
+        <tbody id="cart-items"></tbody>
+      </table>
+
+      <div id="cart-summary" class="card">
+        <p>Subtotal: <span id="cart-subtotal">0.00</span></p>
+        <p>Discount: <span id="cart-discount">0.00</span></p>
+        <p>Tax (15%): <span id="cart-tax">0.00</span></p>
+        <p><strong>Total: <span id="cart-total">0.00</span></strong></p>
+
+        <div class="actions">
+          <button id="clear-cart" class="btn">Clear All</button>
+          <button id="checkout-btn" class="btn primary">Check Out</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p class="small text-muted">&copy; Dignified Epoxy Factory | Crafted with Tina.</p>
+  </footer>
+
+  <script src="../JS/scripts.js" defer></script>
+</body>
+</html>

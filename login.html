@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title>Login — Dignified Epoxy</title>
+  <link rel="stylesheet" href="../Style/style.css" />
+</head>
+<body>
+  <header id="site-header">
+    <div class="container header-inner">
+	<div class="logo-top">
+    <img src="../Assets/DE logo.gif" alt="Store Logo">
+      <div class="brand">Dignified Epoxy</div>
+</div>
+      <nav class="navbar" aria-label="Main navigation">
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="cart.html">Cart</a>
+  <a href="about.html">About Us</a>
+  <span id="profile-status" style="margin-left: 10px; color: #6b6b6b; font-size: 14px;"></span>
+  <button id="logout-btn" class="btn" style="display: none; margin-left: 10px;">Logout</button>
+</nav>
+</nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="login" class="card" aria-labelledby="login-heading">
+      <h2 id="login-heading">Log in</h2>
+      <form id="login-form" novalidate>
+        <div class="form-row">
+          <label for="login-username">Username</label>
+          <input id="login-username" name="username" type="text" required />
+          <small class="error" id="login-username-error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="login-password">Password</label>
+          <input id="login-password" name="password" type="password" required minlength="6" />
+          <small class="error" id="login-password-error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary">Log in</button>
+        </div>
+        <div id="login-msg" aria-live="polite"></div>
+      </form>
+      <p class="small">Don't have an account? <a href="register.html">Register here</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p class="small text-muted">&copy; Dignified Epoxy Factory | Crafted with Tina.</p>
+  </footer>
+
+  <script src="../JS/scripts.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title>Register — Dignified Epoxy</title>
+  <link rel="stylesheet" href="../Style/style.css" />
+</head>
+<body>
+  <header id="site-header">
+    <div class="container header-inner">
+	<div class="logo-top">
+    <img src="../Assets/DE logo.gif" alt="Store Logo">
+      <div class="brand">Dignified Epoxy</div>
+</div>
+      <nav class="navbar" aria-label="Main navigation">
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="cart.html">Cart</a>
+  <a href="about.html">About Us</a>
+  <span id="profile-status" style="margin-left: 10px; color: #6b6b6b; font-size: 14px;">Not logged in</span>
+</nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="register" class="card" aria-labelledby="reg-heading">
+      <h2 id="reg-heading">Create an account</h2>
+      <form id="register-form" novalidate>
+        <div class="form-row">
+          <label for="reg-fullname">Full name</label>
+          <input id="reg-fullname" name="fullname" type="text" required />
+          <small class="error" id="reg-fullname-error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="reg-dob">Date of Birth</label>
+          <input id="reg-dob" name="dob" type="date" required />
+          <small class="error" id="reg-dob-error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="reg-email">Email</label>
+          <input id="reg-email" name="email" type="email" required />
+          <small class="error" id="reg-email-error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="reg-username">Username</label>
+          <input id="reg-username" name="username" type="text" required />
+          <small class="error" id="reg-username-error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="reg-password">Password</label>
+          <input id="reg-password" name="password" type="password" required minlength="6" />
+          <small class="error" id="reg-password-error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn success">Register</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p class="small text-muted">&copy; Dignified Epoxy Factory | Crafted with Tina.</p>
+  </footer>
+
+  <script src="../JS/scripts.js" defer></script>
+</body>
+</html>

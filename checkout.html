@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title>Checkout — Dignified Epoxy</title>
+  <link rel="stylesheet" href="../Style/style.css" />
+</head>
+<body>
+  <header id="site-header">
+    <div class="container header-inner">
+	<div class="logo-top">
+    <img src="../Assets/DE logo.gif" alt="Store Logo">
+      <div class="brand">Dignified Epoxy</div>
+</div>
+      <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+        <a href="about.html">About Us</a>
+		 <a href="Invoice.html">Invoice</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <form id="checkout-form" class="card" novalidate>
+      <h2>Checkout</h2>
+      <div class="form-row">
+        <label for="ship-name">Full name</label>
+        <input id="ship-name" name="name" required />
+      </div>
+      <div class="form-row">
+        <label for="ship-address">Shipping address</label>
+        <input id="ship-address" name="address" required />
+      </div>
+      <div class="form-row">
+        <label for="ship-amount">Amount being paid</label>
+        <input id="ship-amount" name="amount" type="number" min="0" step="0.01" required />
+      </div>
+
+      <div class="checkout-summary small">
+        <p>Order total: <span id="checkout-total">0.00</span></p>
+      </div>
+
+      <div class="actions">
+        <button type="button" id="cancel-checkout" class="btn">Cancel</button>
+        <button type="button" id="clear-cart-btn" class="btn">Clear All</button>
+        <button type="button" id="confirm-checkout" class="btn primary">Confirm</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer container">
+    <p class="small text-muted">&copy; Dignified Epoxy Factory | Crafted with Tina.</p>
+  </footer>
+
+  <script src="../JS/scripts.js" defer></script>
+</body>
+</html>
